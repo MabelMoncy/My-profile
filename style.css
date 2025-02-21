@@ -57,7 +57,7 @@ button:hover{
 }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 1430px) {
     button {
       font-size: 14px;
       padding: 8px 15px;
