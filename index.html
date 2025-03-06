@@ -24,8 +24,10 @@
 <script>
 <script>
 <script>
+<script>
 window.addEventListener('mouseover', initLandbot, { once: true });
 window.addEventListener('touchstart', initLandbot, { once: true });
+
 var myLandbot;
 function initLandbot() {
   if (!myLandbot) {
@@ -36,11 +38,12 @@ function initLandbot() {
         configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2816151-AVHQ401ROSQWAB0M/index.json',
       });
     });
-    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js'; // Changed from .mjs to .js
+    document.head.appendChild(s); // Better way to insert the script
   }
 }
+</script>
+
 </script>
 </script>
     
