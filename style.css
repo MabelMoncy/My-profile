@@ -1,168 +1,147 @@
-body {
-  margin: 100px;
-  padding: 0;
-  background-image: url(images/mybackground.jpg);
-  background-attachment: fixed;
-  color: rgb(72, 69, 69);
-  font-family: sans-serif;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 223, 223);
+    display: flex;
+    background-color: rgb(246, 245, 241)
+    
+}
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10px;
 }
 
-img {
-  height: 300px;
-  width: auto;
-  border-radius: 20%;
-  border: 5px solid rgb(145, 147, 150);
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
+.name
+{
 
-h1 {
-  font-size: 50px;
-  font-weight: 100;
-  text-transform: capitalize;
-}
-
-.intro {
-  display: block;
-  width: 50%;
-  text-align: center;
-  position: relative;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  padding: 20px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-button {
-  background-color: rgb(10, 12, 13);
-  border-radius: 10px;
-  border: none;
-  padding: 12px;
-  width: 100%;
-  max-width: 200px;
-  margin: 5px;
-  margin-bottom: 20px;
-  color: white;
-  font-family: Arial;
-  font-size: 16px;
-  text-align: center;
-  overflow: hidden;
-  word-wrap: break-word;
-  display: inline-block;
-}
-
-button:hover {
-  background-color: rgb(99, 99, 108);
-  transition: 0.2s;
-}
-
-/* Custom Adaptation for 344px x 727px Screen Size */
-@media (max-width: 344px) and (max-height: 727px) {
-  body {
-    margin: 10px;
-  }
-  img {
-    height: 120px;
-  }
-  h1 {
+    background: linear-gradient(90deg, rgb(218, 38, 7), rgb(208, 211, 9), rgb(218, 38, 7)) -100%/ 200%;
+    -webkit-background-clip: text;
+	        background-clip: text;
+    color: transparent;
+	font: 900 clamp(2em, 10vw, 10em) exo, sans-serif;
+	animation: shimmer 5s linear infinite;
+    font-family: 'Trebuchet MS';
     font-size: 20px;
-  }
-  .intro {
-    width: 95%;
-    padding: 10px;
-  }
-  button {
-    width: 90%;
-    font-size: 12px;
-    padding: 8px;
-  }
 }
-
-/* Extra Small Devices (Phones < 600px) */
-@media (max-width: 600px) {
-  body {
-    margin: 20px;
-  }
-  img {
-    height: 150px;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  .intro {
-    width: 90%;
-  }
-  button {
-    width: 80%;
-    font-size: 14px;
+@keyframes shimmer { to { background-position: 100% }}
+.about
+{
+    color: rgb(26, 1, 1);
+    display: block;
+    width: 87%;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: fit-content;
+    border: 2px solid rgb(71, 44, 44);
+    border-radius: 20px;
+    box-shadow: 0px 3px 30px rgba(233, 161, 6, 0.4); 
     padding: 10px;
-  }
+    
 }
+.quote {
+    font-size:13.5px;
+    font-style: italic;
+    color:rgb(123, 123, 128);
+    margin-top: 1px;
 
-/* Small Devices (Phones 600px - 768px) */
-@media (max-width: 768px) {
-  img {
-    height: 200px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  .intro {
-    width: 80%;
-  }
-  button {
-    width: 60%;
+}
+.submit-buttons{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+
+   }
+.submit-buttons button{
+    background: #f28927;
+    background: linear-gradient(30deg, rgba(242, 137, 39, 1) 0%, rgba(199, 180, 87, 1) 47%, rgba(237, 26, 37, 1) 89%, rgba(237, 221, 83, 1) 100%);
+    height: 50px;
+    width: 95px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium';
     font-size: 16px;
-    padding: 12px;
-  }
+    color: rgb(37, 34, 34);
+}
+.submit-buttons button:hover {
+    background-color: rgb(236, 70, 9);
+    color: white;
+    transition: background-color 0.3s ease;
+    transform: scale(1.09);
+    transition: 0.5s;
+    
 }
 
-/* Medium Devices (Tablets 768px - 1024px) */
-@media (max-width: 1024px) {
-  img {
-    height: 250px;
-  }
-  h1 {
-    font-size: 36px;
-  }
-  .intro {
-    width: 70%;
-  }
-  button {
-    width: 50%;
-    font-size: 18px;
-  }
+/*  Small Phones (≥480px) */
+@media (min-width: 480px) {
+    .container-1 {
+        padding: 2rem;
+    }
+
+    .name {
+        font-size: clamp(2.5em, 8vw, 4em);
+    }
+
+    .submit-buttons {
+        justify-content: center;
+    }
 }
 
-/* Large Devices (Desktops > 1024px) */
-@media (max-width: 1280px) {
-  button {
-    width: 30%;
-    font-size: 20px;
-  }
+/*Tablets (≥768px) */
+@media (min-width: 768px) {
+    .name{
+        font-size: 40px;
+    }
+    .container-1{
+        width: 100%;
+        margin-left: 50px;
+    }
 }
 
-/* Extra Large Screens (1440px and above) */
+/*Laptops (≥1024px) */
+@media (min-width: 1024px) {
+    .container-1 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about {
+        font-size: 1.1rem;
+    }
+
+    .submit-buttons button {
+        font-size: 18px;
+        width: 150px;
+        height: 60px;
+    }
+}
+
+/*Desktops (≥1200px) */
+@media (min-width: 1200px) {
+    .container-1 {
+        width: 1000px;
+    }
+
+    .about {
+        padding: 3rem;
+    }
+
+    .submit-buttons {
+        gap: 2rem;
+    }
+}
+
+/*Ultra-Wide Monitors (≥1440px) */
 @media (min-width: 1440px) {
-  img {
-    height: 350px;
-  }
-  h1 {
-    font-size: 60px;
-  }
-  .intro {
-    width: 50%;
-  }
-  button {
-    width: 20%;
-    font-size: 22px;
-  }
+    body {
+        justify-content: center;
+    }
+
+    .container-1 {
+        max-width: 1200px;
+    }
 }
+
+
