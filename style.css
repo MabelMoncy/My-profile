@@ -13,7 +13,7 @@ body{
     padding-left: 10px;
 }
 
-.name
+.name,h2
 {
 
     background: linear-gradient(90deg, rgb(218, 38, 7), rgb(208, 211, 9), rgb(218, 38, 7)) -100%/ 200%;
@@ -23,23 +23,31 @@ body{
 	font: 900 clamp(2em, 10vw, 10em) exo, sans-serif;
 	animation: shimmer 5s linear infinite;
     font-family: 'Trebuchet MS';
-    font-size: 20px;
+    font-size: 25px;
 }
 @keyframes shimmer { to { background-position: 100% }}
-.about
+.about, .project-explain,.skills-explain,.contact-explain
 {
     color: rgb(26, 1, 1);
     display: block;
     width: 87%;
     flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
     height: fit-content;
     border: 2px solid rgb(71, 44, 44);
     border-radius: 20px;
     box-shadow: 0px 3px 30px rgba(233, 161, 6, 0.4); 
     padding: 10px;
-    
 }
+.contact-explain{
+    margin-bottom: 10px;
+}
+.skills-explain ul{
+    padding-left: 0;
+    font-size: 13px;
+}
+
 .quote {
     font-size:13.5px;
     font-style: italic;
@@ -70,7 +78,34 @@ body{
     transition: background-color 0.3s ease;
     transform: scale(1.09);
     transition: 0.5s;
+    cursor: pointer;
     
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 222);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-top: 10px ;
+
+        
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-right: 30px;
+  font-family:  Arial, sans-serif;
+  font-weight: 600;
+  
+}
+.nav-links li a {
+    font-size: 13px;
+    color: rgb(133, 1, 1);
+    text-decoration: none;
 }
 
 /*  Small Phones (≥480px) */
@@ -143,5 +178,19 @@ body{
         max-width: 1200px;
     }
 }
+html{
+    scroll-behavior: smooth;
+}
+footer {
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-family: arial;
+    color : rgb(133, 1, 1);
+    
+}
+
 
 
