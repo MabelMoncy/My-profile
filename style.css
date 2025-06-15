@@ -67,7 +67,7 @@ section {
 .submit-buttons{
     margin-top: 50px;
     display: flex;
-    gap: 25px;
+    gap: 35px;
 
    }
 .submit-buttons button{
