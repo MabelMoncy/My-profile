@@ -1,9 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(240, 223, 223);
     display: flex;
-    background-color: rgb(246, 245, 241)
+    background-color: rgb(26, 25, 25);
     
 }
 .container-1 {
@@ -26,9 +25,9 @@ body{
     font-size: 25px;
 }
 @keyframes shimmer { to { background-position: 100% }}
-.about, .project-explain,.skills-explain,.contact-explain
+.about, .project-explain,.skills-explain,.contact-explain,.hobbies-explain
 {
-    color: rgb(26, 1, 1);
+    color: rgb(224, 221, 221);
     display: block;
     width: 87%;
     flex-direction: column;
@@ -40,10 +39,20 @@ body{
     box-shadow: 0px 3px 30px rgba(233, 161, 6, 0.4); 
     padding: 10px;
 }
-.contact-explain{
-    margin-bottom: 10px;
+.about:hover, .project-explain:hover,.skills-explain:hover,.contact-explain:hover,.hobbies-explain:hover
+{
+    transform:scale3d(1.02, 1.02, 1.02);
+    transition:0.3s ease-in-out;
+ 
+}
+section {
+    margin-top: 2px ;
 }
 .skills-explain ul{
+    padding-left: 0;
+    font-size: 13px;
+}
+.hobbies-explain ul{
     padding-left: 0;
     font-size: 13px;
 }
@@ -73,9 +82,8 @@ body{
     color: rgb(37, 34, 34);
 }
 .submit-buttons button:hover {
-    background-color: rgb(236, 70, 9);
     color: white;
-    transition: background-color 0.3s ease;
+    transition:0.3s ease;
     transform: scale(1.09);
     transition: 0.5s;
     cursor: pointer;
@@ -85,7 +93,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(224, 224, 222);
+    background-color: rgb(54, 54, 54);
     border-radius: 20px;
     margin-bottom: 20px;
     margin-right: 10px;
@@ -96,7 +104,7 @@ body{
 .nav-links{
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 15px;
   padding-right: 30px;
   font-family:  Arial, sans-serif;
   font-weight: 600;
@@ -104,8 +112,13 @@ body{
 }
 .nav-links li a {
     font-size: 13px;
-    color: rgb(133, 1, 1);
+    color: rgba(245, 244, 243, 0.986);
     text-decoration: none;
+}
+.nav-links li a:hover {
+    color: rgb(212, 157, 4);
+    transition: 0.3s ease;
+    transform: scale(1.1);
 }
 
 /*  Small Phones (≥480px) */
@@ -121,6 +134,7 @@ body{
     .submit-buttons {
         justify-content: center;
     }
+   
 }
 
 /*Tablets (≥768px) */
@@ -132,6 +146,7 @@ body{
         width: 100%;
         margin-left: 50px;
     }
+
 }
 
 /*Laptops (≥1024px) */
@@ -151,6 +166,8 @@ body{
         width: 150px;
         height: 60px;
     }
+  
+
 }
 
 /*Desktops (≥1200px) */
@@ -166,6 +183,8 @@ body{
     .submit-buttons {
         gap: 2rem;
     }
+
+
 }
 
 /*Ultra-Wide Monitors (≥1440px) */
@@ -176,21 +195,22 @@ body{
 
     .container-1 {
         max-width: 1200px;
-    }
+   
 }
 html{
     scroll-behavior: smooth;
 }
-footer {
-    text-align: center;
-    border-radius: 20px;
-    border: 1px solid black;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    font-family: arial;
-    color : rgb(133, 1, 1);
-    
 }
+footer {
+  font-size: 10px;
+  padding: 12px 10px;
+  text-align: center;
+  color: rgb(255, 254, 254);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+    
 
 
 
