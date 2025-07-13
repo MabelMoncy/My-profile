@@ -11,7 +11,8 @@
     <div class="scroll-indicator"></div>
 
     <nav class="navbar">
-        <div class="container">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Hello I'm🙋🏻‍♂️</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -19,8 +20,23 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
     <section id="home" class="hero">
         <div class="name-section">
@@ -54,19 +70,19 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3 class="project-title">AI Chatbot with LLaMA 3.2</h3>
+                    <h3 class="project-title">GenNet- An Ollama powered Ai chatbot</h3>
                     <p class="project-description">Developed an intelligent chatbot using Ollama's LLaMA 3.2 model with natural language processing capabilities.</p>
                     <div class="project-links">
-                        <a href="https://github.com/MabelMoncy" class="project-link" target="_blank">
+                        <a href="https://github.com/MabelMoncy/GenNet" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3 class="project-title">AI PDF Web App</h3>
+                    <h3 class="project-title">AlPy - AI PDF Web App</h3>
                     <p class="project-description">Building an intelligent document Q&A system using OpenAI API, LangChain, and ChromaDB for semantic search.</p>
                     <div class="project-links">
-                        <a href="https://github.com/MabelMoncy" class="project-link" target="_blank">
+                        <a href="https://github.com/MabelMoncy/My_App" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -75,7 +91,16 @@
                     <h3 class="project-title">Missing Person Report System</h3>
                     <p class="project-description">Contributed to a comprehensive system for managing missing person reports during internship.</p>
                     <div class="project-links">
-                        <a href="https://github.com/MabelMoncy" class="project-link" target="_blank">
+                        <a href="https://github.com/MabelMoncy/missingreport" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Instagram-1980</h3>
+                    <p class="project-description">This was a competition organized by IEEE and i have secured Third position in the project</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MabelMoncy/Insta1980" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -122,7 +147,6 @@
             <div class="contact-content">
                 <div class="contact-form">
                     <h3>Send Me a Message</h3>
-                    
                     <form>
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -217,6 +241,31 @@
         
         // Start typewriter effect
         setTimeout(typeWriter, 1000);
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
