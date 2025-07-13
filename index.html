@@ -3,104 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Know me</title>
+    <title>Mabel Anto Moncy - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-1">
-        <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#about-page">About Me</a></li>
-            <li><a href="#projects-page">Projects</a></li>
-            <li><a href="#skills-page">Skills</a></li>
-            <li><a href="#contact-page">Contact</a></li>
-        </ul>
+    <div class="scroll-indicator"></div>
 
-    </nav>
-    <div class="name"><h2>Hello,<br>
-        I'm Mabel Anto Moncy</h2>
-    </div>
-    
-    <div class="about" id="about-page">
-        <p>
-
-        I'm a computer science student with a passion for technology and innovation. I enjoy building creative and practical projects, especially in the areas of
-         web development and artificial intelligence.
-          I'm always eager to learn new skills and turn ideas into <br><br>
-          Python Developer | Web Developer | AI Enthusiast<br>
-          
-        </p>
-        <div class="quote">“Build with purpose, learn with passion.”</div>
-    </div>
-    <section id="projects-page">
-        <h2>Projects</h2>
-        <div class="project-explain">
-            
-        <p>
-            I have worked on projects including an AI chatbot using Ollama’s LLaMA 3.2,
-             a personal portfolio website, and an internship on a Missing Person Report system. Currently, 
-             I'm developing an AI PDF web app using the OpenAI API, LangChain, and ChromaDB for intelligent document-based Q&A.
-             All the projects are updated in my GitHub repository.
-        </p>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        
-          
-    </section>
-    <section id="skills-page">
-         <h2>My skills</h2>
-        <div class="hobbies-explain">
-           
-            <p>
-                <ul style="list-style: none;">
-                    <li>🔹 Python Programming</li>
-                    <li>🔹 Web Development (HTML, CSS, FLASK)</li>
-                    <li>🔹 AI integration</li>
-                    <li>🔹 OpenAI API Usage</li>
-                    <li>🔹 Responsive Web Design</li>
-                    <li>🔹 Version Control (Git/GitHub)</li>
-                    <li>🔹 Problem Solving and Debugging</li>
-                    
-                </ul>
-            </p>
-        </div>  
-    </section>
-     <section id="hobbies-page">
-         <h2>Hobbies</h2>
-        <div class="skills-explain">
-           
-            <p>
-                <ul style="list-style: none;">
-                    <li>⭐ Coding</li>
-                    <li>⭐ Singing </li>
-                    <li>⭐ Poster Making </li>
-                    <li>⭐ Watching Movies</li>
-                    <li>⭐ Reading Books</li>
-                    <li>⭐ Photography</li>
-                    <li>⭐ Learning New Skills</li>
+    </nav>
 
+    <section id="home" class="hero">
+        <div class="name-section">
+            <h1 class="name">Mabel Anto Moncy</h1>
+            <div class="typing-container">
+                <div class="typing-text" id="typingText">
+                    <span id="typewriter"></span>
+                    <span class="typing-cursor"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate computer science student with a deep love for technology and innovation. I specialize in building creative and practical projects, particularly in web development and artificial intelligence.</p>
+                    <p>My journey in tech is driven by curiosity and the desire to create meaningful solutions. I'm constantly learning new technologies and turning innovative ideas into reality.</p>
+                </div>
+                <div class="quote floating">
+                    "Build with purpose, learn with passion."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">AI Chatbot with LLaMA 3.2</h3>
+                    <p class="project-description">Developed an intelligent chatbot using Ollama's LLaMA 3.2 model with natural language processing capabilities.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MabelMoncy" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">AI PDF Web App</h3>
+                    <p class="project-description">Building an intelligent document Q&A system using OpenAI API, LangChain, and ChromaDB for semantic search.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MabelMoncy" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Missing Person Report System</h3>
+                    <p class="project-description">Contributed to a comprehensive system for managing missing person reports during internship.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/MabelMoncy" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python Programming</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Integration</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Version Control</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Problem Solving</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
                     
-                </ul>
-            </p>
-        </div>  
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/MabelMoncy" class="social-link" target="_blank">
+                        <i class="fab fa-github social-icon"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mabel-anto-moncy-a58721316/" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin social-icon"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/mabel_moncy/" class="social-link" target="_blank">
+                        <i class="fab fa-instagram social-icon"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:mabelmoncy@email.com" class="social-link">
+                        <i class="fas fa-envelope social-icon"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="tel:+1234567890" class="social-link">
+                        <i class="fas fa-phone social-icon"></i>
+                        <span>Call Me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact-page">
-        <h2>know me more</h2>
-        <div class="contact-explain">
-            <p>
-                Connect With Me: 
-            </p>
-          <div class="submit-buttons">
-        <button onclick="window.open('https://github.com/MabelMoncy','_blank')">Github</button>
-        <button onclick="window.open('https://www.instagram.com/mabel_moncy/','_blank')">Instagram</button>
-        <button onclick="window.open('https://www.linkedin.com/in/mabel-anto-moncy-a58721316/','_blank')">LinkedIn</a></button>
-    </div>   
-    </section>
+
     <footer class="footer">
-      <div class="footer-content">
-        <p>&copy; 2025 Mabel_Anto_Moncy. All rights reserved.</p>
-      </div>
+        <div class="container">
+            <p>&copy; 2025 Mabel Anto Moncy. All rights reserved.</p>
+        </div>
     </footer>
-   
-    </div>
+
+    <script>
+        // Typewriter effect
+        const texts = [
+            "Python Developer",
+            "Web Developer", 
+            "AI Enthusiast",
+            "Problem Solver"
+        ];
+        
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typeSpeed = 100;
+        const deleteSpeed = 50;
+        const pauseTime = 2000;
+        
+        function typeWriter() {
+            const currentText = texts[textIndex];
+            const typewriterElement = document.getElementById('typewriter');
+            
+            if (isDeleting) {
+                typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    setTimeout(typeWriter, typeSpeed);
+                } else {
+                    setTimeout(typeWriter, deleteSpeed);
+                }
+            } else {
+                typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                
+                if (charIndex === currentText.length) {
+                    isDeleting = true;
+                    setTimeout(typeWriter, pauseTime);
+                } else {
+                    setTimeout(typeWriter, typeSpeed);
+                }
+            }
+        }
+        
+        // Start typewriter effect
+        setTimeout(typeWriter, 1000);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll indicator
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.offsetHeight;
+            const winHeight = window.innerHeight;
+            const scrollPercent = scrollTop / (docHeight - winHeight);
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            scrollIndicator.style.transform = `scaleX(${scrollPercent})`;
+        });
+
+        // Form submission with EmailJS
+        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Using Formspree (free service) - replace with your endpoint
+            fetch('https://formspree.io/f/xrblzeyk', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Thank you for your message! I\'ll get back to you soon.');
+                    this.reset();
+                } else {
+                    throw new Error('Failed to send message');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Sorry, there was an error sending your message. Please try again or contact me directly.');
+            })
+            .finally(() => {
+                // Reset button state
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .skill-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+    </script>
 </body>
 </html>
