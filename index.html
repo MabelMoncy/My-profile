@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mabel Anto Moncy - Portfolio</title>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="scroll-indicator"></div>
 
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">Hello I'm🙋🏻‍♂️</a>
+
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,6 +24,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -28,6 +33,7 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -38,9 +44,11 @@
         </ul>
     </div>
 
+    <!-- Home Section -->
     <section id="home" class="hero">
         <div class="name-section">
             <h1 class="name">Mabel Anto Moncy</h1>
+
             <div class="typing-container">
                 <div class="typing-text" id="typingText">
                     <span id="typewriter"></span>
@@ -50,120 +58,176 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
+
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a B.Tech Computer Science student from Kerala with a strong passion for technology, software development, and AI engineering. I focus on building practical and impactful projects across web development, app development, and artificial intelligence.</p>
-                    <p>My journey in tech is driven by curiosity and the ambition to solve real-world problems. I continuously explore new tools, enhance my skills in Python, AI integrations, cybersecurity, and modern development workflows, and turn innovative ideas into functional solutions.</p>
+                    <p>
+                        I'm a B.Tech Computer Science student from Kerala with a strong passion for technology,
+                        software development, and AI engineering. I focus on building practical and impactful 
+                        projects across web development, app development, and artificial intelligence.
+                    </p>
+
+                    <p>
+                        My journey in tech is driven by curiosity and the ambition to solve real-world problems.
+                        I continuously explore new tools, enhance my skills in Python, AI integrations, cybersecurity,
+                        and modern development workflows, and turn innovative ideas into functional solutions.
+                    </p>
                 </div>
-                <div class="quote floating">
-                    "Build with purpose, learn with passion."
-                </div>
+
+                <div class="quote floating">"Build with purpose, learn with passion."</div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Projects</h2>
+
             <div class="projects-grid">
+
+                <!-- Project 1 -->
                 <div class="project-card">
                     <h3 class="project-title">GenNet- An Ollama powered Ai chatbot</h3>
-                    <p class="project-description">Developed an intelligent chatbot using Ollama's LLaMA 3.2 model with natural language processing capabilities.</p>
+                    <p class="project-description">
+                        Developed an intelligent chatbot using Ollama's LLaMA 3.2 model with natural language processing capabilities.
+                    </p>
+
                     <div class="project-links">
                         <a href="https://github.com/MabelMoncy/GenNet" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
+
+                <!-- Project 2 -->
                 <div class="project-card">
                     <h3 class="project-title">AlPy - AI PDF Web App</h3>
-                    <p class="project-description">Building an intelligent document Q&A system using OpenAI API, LangChain, and ChromaDB for semantic search.</p>
+                    <p class="project-description">
+                        An intelligent document Q&A system using OpenAI API, LangChain, and ChromaDB for semantic search. Builded Just to try diffrent Python modules, APIs, API calls etc..
+                    </p>
+
                     <div class="project-links">
                         <a href="https://github.com/MabelMoncy/My_App" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
+
+                <!-- Project 3 -->
                 <div class="project-card">
                     <h3 class="project-title">Missing Person Report System</h3>
-                    <p class="project-description">Contributed to a comprehensive system for managing missing person reports during internship.</p>
+                    <p class="project-description">
+                        Contributed to a comprehensive system for managing missing person reports during internship.
+                    </p>
+
                     <div class="project-links">
                         <a href="https://github.com/MabelMoncy/missingreport" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
+
+                <!-- Project 4 -->
                 <div class="project-card">
                     <h3 class="project-title">Instagram-1980</h3>
-                    <p class="project-description">This was a competition organized by IEEE and i have secured Third position in the project</p>
+                    <p class="project-description">
+                        This was a competition organized by IEEE and I secured Third position in the project.
+                    </p>
+
                     <div class="project-links">
                         <a href="https://github.com/MabelMoncy/Insta1980" class="project-link" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
+
+                <!-- Project 5 (Transcriber App) -->
                 <div class="project-card" style="background-color: rgb(62, 62, 64);">
                     <h3 class="project-title" style="color: rgb(239, 255, 9);">Transcriber-App</h3>
+
                     <p class="project-description">
-                       One of my most <b>important and emotional projects</b> is an app I built for my father.
+                        One of my most <b>important and emotional projects</b> is an app I built for my father.
                         It transcribes WhatsApp audio messages in the .opus format into clear text.
                         <br><br>
                         Why did I build this app?<br>
-                        <b>I created it to solve the problem of WhatsApp not providing a transcription feature for the Malayalam language.
-                    <div class="project-links"></b>
-                        <a href="https://www.linkedin.com/posts/mabel-anto-moncy-a58721316_ai-flutter-geminiai-activity-7393181681182015488-EtqR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFAyYqQB1SQkmkWY4OImZNlu7rNwh6UdRSc" class="project-link" target="_blank">
-                        <i class="fab fa-linkedin social-icon"></i>LinkedIn                    
-                    </a>
-                </div> 
-            </div>
-            <div class="project-card" style="background-color: rgb(62, 62, 64);">
-                    <h3 class="project-title" style="color: rgb(239, 255, 9);">JAVA Mini Project-KTU 2024 Scheme</h3>
-                    <p class="project-description">
-                      <p>
-                        Doctor’s Wallet is a Java-based medical record management system designed to help doctors store, manage, and quickly access patient information. The system allows doctors to add patient details, retrieve records by name, and search for patients based on prescribed medicines. It is built using Java Swing for the interface, MySQL for secure data storage, and JDBC for seamless database connectivity.
-                        Had wonderful experience on this project
-                      </p>
-                    <div class="project-links"></b>
-                        <a href="https://www.linkedin.com/posts/mabel-anto-moncy-a58721316_java-swing-mysql-activity-7392225729578430466-jW5G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFAyYqQB1SQkmkWY4OImZNlu7rNwh6UdRSc" class="project-link" target="_blank">
-                            <i class="fab fa-linkedin social-icon"></i>LinkedIn                     
+                        <b>I created it to solve the problem of WhatsApp not providing a transcription feature for the Malayalam language.</b>
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/posts/mabel-anto-moncy-a58721316_ai-flutter-geminiai-activity-7393181681182015488-EtqR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFAyYqQB1SQkmkWY4OImZNlu7rNwh6UdRSc" 
+                           class="project-link" 
+                           target="_blank">
+                            <i class="fab fa-linkedin social-icon"></i> LinkedIn
                         </a>
-                        <a href="https://github.com/MabelMoncy/Java-Mini-Project-KTU-2024-Scheme-" class="project-link" target="_blank">
+                    </div>
+                </div>
+
+                <!-- Project 6 (Java Mini Project) -->
+                <div class="project-card" style="background-color: rgb(62, 62, 64);">
+                    <h3 class="project-title" style="color: rgb(239, 255, 9);">
+                        JAVA Mini Project-KTU 2024 Scheme
+                    </h3>
+
+                    <p class="project-description">
+                        Doctor’s Wallet is a Java-based medical record management system designed to help doctors store, manage, and quickly access patient information.
+                        Doctors can add patient details, retrieve records by name, and search patient lists by prescribed medicines.
+                        Built using Java Swing, MySQL, and JDBC.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://www.linkedin.com/posts/mabel-anto-moncy-a58721316_java-swing-mysql-activity-7392225729578430466-jW5G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFAyYqQB1SQkmkWY4OImZNlu7rNwh6UdRSc" 
+                           class="project-link" target="_blank">
+                            <i class="fab fa-linkedin social-icon"></i> LinkedIn
+                        </a>
+
+                        <a href="https://github.com/MabelMoncy/Java-Mini-Project-KTU-2024-Scheme-" 
+                           class="project-link" 
+                           target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>
+                    </div>
+                </div>
 
             </div>
-
-        </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title">Skills & Expertise</h2>
+
             <div class="skills-grid">
                 <div class="skill-item">
                     <div class="skill-icon"><i class="fab fa-python"></i></div>
                     <h3>Python Programming</h3>
                 </div>
+
                 <div class="skill-item">
                     <div class="skill-icon"><i class="fas fa-code"></i></div>
                     <h3>Web Development</h3>
                 </div>
+
                 <div class="skill-item">
                     <div class="skill-icon"><i class="fas fa-robot"></i></div>
                     <h3>AI Integration</h3>
                 </div>
+
                 <div class="skill-item">
                     <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
                     <h3>Responsive Design</h3>
                 </div>
+
                 <div class="skill-item">
                     <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
                     <h3>Version Control</h3>
                 </div>
+
                 <div class="skill-item">
                     <div class="skill-icon"><i class="fas fa-bug"></i></div>
                     <h3>Problem Solving</h3>
@@ -172,81 +236,92 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
+
             <div class="contact-content">
                 <div class="contact-form">
                     <h3>Send Me a Message</h3>
+
                     <form>
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" required>
                         </div>
+
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" required>
                         </div>
+
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" rows="5" required></textarea>
                         </div>
+
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
+
                 <div class="social-links">
                     <a href="https://github.com/MabelMoncy" class="social-link" target="_blank">
                         <i class="fab fa-github social-icon"></i>
                         <span>GitHub</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/mabel-anto-moncy-a58721316/" class="social-link" target="_blank">
+
+                    <a href="https://www.linkedin.com/in/mabel-anto-moncy-a58721316/" 
+                       class="social-link" target="_blank">
                         <i class="fab fa-linkedin social-icon"></i>
                         <span>LinkedIn</span>
                     </a>
+
                     <a href="https://www.instagram.com/mabel_moncy/" class="social-link" target="_blank">
                         <i class="fab fa-instagram social-icon"></i>
                         <span>Instagram</span>
                     </a>
+
                     <a href="mailto:mabelofficial22@gmail.com" class="social-link">
                         <i class="fas fa-envelope social-icon"></i>
                         <span>Email</span>
                     </a>
-                   
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Mabel Anto Moncy. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- JavaScript (NO changes made) -->
     <script>
-        // Typewriter effect
         const texts = [
             "Python Developer",
-            "Web Developer", 
+            "Web Developer",
             "AI Enthusiast",
             "Problem Solver"
         ];
-        
+
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
         const typeSpeed = 100;
         const deleteSpeed = 50;
         const pauseTime = 2000;
-        
+
         function typeWriter() {
             const currentText = texts[textIndex];
             const typewriterElement = document.getElementById('typewriter');
-            
+
             if (isDeleting) {
                 typewriterElement.textContent = currentText.substring(0, charIndex - 1);
                 charIndex--;
-                
+
                 if (charIndex === 0) {
                     isDeleting = false;
                     textIndex = (textIndex + 1) % texts.length;
@@ -257,7 +332,7 @@
             } else {
                 typewriterElement.textContent = currentText.substring(0, charIndex + 1);
                 charIndex++;
-                
+
                 if (charIndex === currentText.length) {
                     isDeleting = true;
                     setTimeout(typeWriter, pauseTime);
@@ -266,20 +341,17 @@
                 }
             }
         }
-        
-        // Start typewriter effect
+
         setTimeout(typeWriter, 1000);
 
-        // Mobile menu toggle
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
-        
+
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             mobileMenu.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -287,7 +359,6 @@
             });
         });
 
-        // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
                 hamburger.classList.remove('active');
@@ -295,7 +366,6 @@
             }
         });
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -305,7 +375,6 @@
             });
         });
 
-        // Scroll indicator
         window.addEventListener('scroll', () => {
             const scrollTop = window.pageYOffset;
             const docHeight = document.body.offsetHeight;
@@ -315,58 +384,50 @@
             scrollIndicator.style.transform = `scaleX(${scrollPercent})`;
         });
 
-        // Form submission with EmailJS
-        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+        document.querySelector('.contact-form form').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const submitBtn = document.querySelector('.submit-btn');
             const originalText = submitBtn.textContent;
-            
-            // Show loading state
+
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
-            
-            // Get form data
+
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
                 message: document.getElementById('message').value
             };
-            
-            // Using Formspree (free service) - replace with your endpoint
+
             fetch('https://formspree.io/f/xrblzeyk', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
             })
-            .then(response => {
-                if (response.ok) {
-                    alert('Thank you for your message! I\'ll get back to you soon.');
-                    this.reset();
-                } else {
-                    throw new Error('Failed to send message');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('Sorry, there was an error sending your message. Please try again or contact me directly.');
-            })
-            .finally(() => {
-                // Reset button state
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            });
+                .then(response => {
+                    if (response.ok) {
+                        alert('Thank you for your message! I\'ll get back to you soon.');
+                        this.reset();
+                    } else {
+                        throw new Error('Failed to send message');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Sorry, there was an error sending your message. Please try again or contact me directly.');
+                })
+                .finally(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
         });
 
-        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.animationPlayState = 'running';
@@ -378,15 +439,13 @@
             observer.observe(el);
         });
 
-        // Navbar background change on scroll
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-            } else {
-                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-            }
+            navbar.style.background = window.scrollY > 100
+                ? 'rgba(10, 10, 10, 0.98)'
+                : 'rgba(10, 10, 10, 0.95)';
         });
     </script>
+
 </body>
 </html>
